@@ -1,0 +1,113 @@
+:root{
+/* ### Primary */
+
+--DarkCyan: #3c8067;
+--Cream: #f2ebe3;
+
+/* ### Neutral */
+
+--VeryDarkBlue: #1c232b;
+--DarkGrayishBlue: #6c7289;
+--White: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 80%;
+    font-size: 14px;
+    margin: 2rem auto;
+}
+
+.container__image{
+    width: 100%;
+    height: calc(15rem - 1px);
+}
+.image{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    object-fit: cover;
+}
+
+.content .perfume{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.content p{
+    margin: 0.8rem 0;
+    color: var(--DarkGrayishBlue);
+}
+
+
+.content h1{
+    color: var(--VeryDarkBlue);
+    font-family: 'Fraunces', serif;
+}
+
+.content__precios{
+    display: flex;
+    align-items: center;
+}
+
+.content__precios .content__oferta{
+    font-family: 'Fraunces', serif;
+    color: var(--DarkCyan);
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.content__precios .content__precio{
+    
+    color: var(--DarkGrayishBlue);
+    font-weight: 400;
+    text-decoration: line-through;
+    font-size: 13px;
+}
+
+.boton a{
+    display: inline-block;
+    width: 100%;
+    background-color: var(--DarkCyan);
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 10px;
+    color: var(--White);
+    text-decoration: none;
+}
+
+@media (min-width: 500px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        height: calc( 50rem - 1px);
+    }
+    .container__image{
+        width:500px;
+        height:350px;
+        margin-right: 1rem;
+    }
+    .image{
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 5%;
+    }
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
